@@ -1,0 +1,53 @@
+.categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.category{
+    margin-right: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: all 0.2s linear;
+    border-bottom: 2px solid #dfb02f;
+
+}
+
+
+
+.words{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.wordInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 2px 0;
+}
+
+.wordTranslate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+.wordTranslate p{
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+
+.usageExample{
+    color: #dfb02f;
+}

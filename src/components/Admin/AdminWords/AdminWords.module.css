@@ -1,0 +1,37 @@
+.adminWords{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.menuBt{
+    margin-right: 20px;
+}
+
+.menuBt button{
+    background: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    
+    
+}
+
+.underline{
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.2s linear;
+    
+}
+
+.menuBt button:hover ~ .underline{
+    width: 100%;
+}

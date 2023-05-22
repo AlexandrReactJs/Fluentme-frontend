@@ -1,0 +1,47 @@
+.Menu{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 1290px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: start;
+}
+
+
+.userInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.userAvatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.userName h3{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.userName p {
+    color: #dfb02f;
+}
+
+
+.exitBt {
+    border: unset;
+    background: none;
+}
+
+.link {
+    
+}

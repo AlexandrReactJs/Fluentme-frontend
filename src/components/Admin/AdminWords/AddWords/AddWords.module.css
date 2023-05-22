@@ -1,0 +1,63 @@
+
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.inputs input{
+    border: unset;
+    padding: 10px;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #dfb02f;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.category{
+    margin-right: 20px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    transition: all 0.2s linear;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #dfb02f;
+    transition: all 0.2s linear;
+    
+}
+
+.category:hover{
+    background-color: #dfb02f;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.addWordBt{
+    padding: 10px 30px;
+    border: unset;
+    background: none;
+    border: 2px solid #dfb02f;
+    color: #dfb02f;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.2s linear;
+    margin-top: 20px;
+}
+
+.addWordBt:hover{
+    background-color: #dfb02f;
+    color: #fff;
+}
+

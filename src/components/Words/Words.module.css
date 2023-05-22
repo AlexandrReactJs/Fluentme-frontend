@@ -1,0 +1,45 @@
+.categories{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    flex-wrap: wrap;
+}
+
+
+.category{
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 0.2s ease-out;
+    
+}
+
+.category:hover {
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.words{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.word{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+
+}

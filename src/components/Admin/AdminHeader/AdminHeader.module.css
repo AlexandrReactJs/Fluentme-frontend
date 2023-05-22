@@ -1,0 +1,33 @@
+.header{
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+}
+
+
+.menu{}
+
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+}
+
+
+.logo{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.logo span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #dfb02f;
+}

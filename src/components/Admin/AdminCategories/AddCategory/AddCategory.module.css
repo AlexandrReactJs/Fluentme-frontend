@@ -1,0 +1,36 @@
+.AddCategory{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.AddCategory input{
+    border: unset;
+    background: none;
+    padding: 20px 10px;
+    border-bottom: 2px solid #dfb02f;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+.buttons button{
+    padding: 10px 20px;
+    background: none;
+    border: 2px solid #dfb02f;
+    color: #dfb02f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s linear;
+}
+
+.buttons button:hover{
+    background-color: #dfb02f;
+    color: #fff;
+}
