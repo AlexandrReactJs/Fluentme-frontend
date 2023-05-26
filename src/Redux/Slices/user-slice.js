@@ -2,6 +2,18 @@ import axios from 'axios';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 
+
+export const fetchRegister = createAsyncThunk(
+    'user/fetchRegister',
+    async (body) => {
+        const response = await axios.post('http://localhost:4444/auth/register', body)
+        return response.data
+    }
+)
+
+
+
+
 export const fetchLogin = createAsyncThunk(
     'users/fetchLogin',
     async (body) => {
@@ -50,7 +62,7 @@ export const userSlice = createSlice({
                 state.userInfo = action.payload;
                 state.isAuth = true
                 state.status = 'ok'
-                localStorage.setItem('userToken', action.payload.token)  
+                localStorage.setItem('userToken', action.payload.token)
             }
 
         }).addCase(fetchLogin.pending, (state) => {
@@ -66,9 +78,22 @@ export const userSlice = createSlice({
                 state.userInfo = action.payload
                 state.isAuth = true
                 state.status = 'ok'
-                localStorage.setItem('userToken', action.payload.token)  
+                localStorage.setItem('userToken', action.payload.token)
             }
 
+        }).addCase(fetchAuthMe.pending, (state) => {
+            state.userInfo = null
+            state.isAuth = false
+            state.status = 'loading'
+        }).addCase(fetchAuthMe.rejected, (state) => {
+            state.userInfo = null
+            state.isAuth = false
+            state.status = 'loading'
+        }).addCase(fetchRegister.fulfilled, (state, action) => {
+            state.userInfo = action.payload
+            state.isAuth = true
+            state.status = 'ok'
+            localStorage.setItem('userToken', action.payload.token)
         })
     }
 })

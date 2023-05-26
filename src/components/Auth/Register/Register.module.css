@@ -1,0 +1,48 @@
+.register{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.registerForm{
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    background-color: #333;
+    padding: 40px 20px;
+    border-radius: 10px;
+
+}
+
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+
+.inputWrapper label{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 10px;
+}
+
+
+.inputWrapper input{
+    padding: 10px 5px;
+    background: none;
+    border: unset;
+    border-bottom: 2px solid #dfb02f;
+    color:#fff;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+

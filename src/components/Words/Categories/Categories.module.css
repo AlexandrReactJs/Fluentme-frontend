@@ -1,0 +1,24 @@
+.categories{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
+.category{
+    color: #fff;
+    margin-right: 20px;
+    padding: 10px 25px;
+    background-color: #333;
+    border-radius: 60px;
+    transition: all 0.2s linear;
+    
+    
+}
+
+.category:hover {
+    outline: 1px solid #dfb02f;
+}

@@ -2,13 +2,13 @@ import React from "react";
 import styles from './Words.module.css'
 import { fetchCategory } from "../../Redux/Slices/words-slice";
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchWords } from "../../Redux/Slices/words-slice";
+import Categories from "./Categories/Categories";
 
 
 
 const Words = () => {
     const dispatch = useDispatch()
-    const categories = useSelector(state => state.words.categories)
+    
     const words = useSelector(state => state.words.words)
 
 
@@ -17,18 +17,10 @@ const Words = () => {
     }, [])
 
 
-    if (categories) {
+   
         return (
             <div>
-                <div className={styles.categories}>
-                    {
-                        categories.map(el =>
-                            <div onClick={() => { dispatch(fetchWords(el.engName)) }} className={styles.category}>
-                                <p>{el.name}</p>
-                            </div>)
-                    }
-                </div>
-
+                <Categories/>
                 <div className={styles.words}>
                     {
                         words ? words.map(el =>
@@ -43,8 +35,7 @@ const Words = () => {
         )
     }
 
-    return <div>Loading</div>
-}
+
 
 
 export default Words;

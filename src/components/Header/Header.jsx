@@ -15,13 +15,7 @@ const Header = () => {
   
 
 
-    React.useEffect(() => {
-
-        dispatch(fetchAuthMe())
-
-
-
-    }, [dispatch])
+    
 
 
 
