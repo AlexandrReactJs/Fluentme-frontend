@@ -1,0 +1,47 @@
+.authButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.authButtons p{
+    color: #bebebe;
+    margin: 0 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.loginBt{
+    color: #dfb02f;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid #dfb02f;
+    border-radius: 2px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+
+.loginBt:hover{
+    color: #fff;
+    background-color: #dfb02f;
+}
+
+
+.registerBt{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    margin-right: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+
+
+.registerBt:hover{
+    color:#dfb02f;
+    background-color: #fff;
+}

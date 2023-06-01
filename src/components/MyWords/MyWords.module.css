@@ -1,33 +1,32 @@
-.words{
-    margin-top: 40px;
+.myWords{
+    color:#fff;
+    margin-top: 20px;
 }
 
-.title{
+.title h3{
     display: inline-block;
     color: #fff;
     font-family: 'Nunito', sans-serif;
- 
 }
-.wordsWrapper {
-    margin-top: 20px;
+
+
+.wordsWrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
+    margin-top: 20px;
+    
 }
 
 .word{
     display: flex;
     flex-direction: column;
     background-color: #333;
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-radius: 10px;
-    color:#fff;
     text-align: center;
-    position: relative;
-
 }
-
 
 .wordInfo{
     display: flex;
@@ -36,40 +35,15 @@
     margin-bottom: 5px;
 }
 
-.engWord{
+.wordInfo p{
     color: #fff;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 20px;
 }
-
-
-.translate{
-    color: #fff;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-}
-
 
 .usageExample p{
     color: #dfb02f;
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.addWordBt{
-    position: absolute;
-    top:20%;
-    left: 88%;
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif;
-    transition: all 0.2s linear;
-}
-
-
-.addWordBt:hover{
-    color: #dfb02f;
+    
 }

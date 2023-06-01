@@ -12,8 +12,6 @@ export const fetchRegister = createAsyncThunk(
 )
 
 
-
-
 export const fetchLogin = createAsyncThunk(
     'users/fetchLogin',
     async (body) => {
@@ -34,6 +32,17 @@ export const fetchAuthMe = createAsyncThunk(
         const response = await axios.get('http://localhost:4444/auth/me', { headers: { Authorization: 'Bearer ' + token } })
         return response.data;
 
+    }
+)
+
+
+export const addWordToUserWordList = createAsyncThunk(
+    'users/addWordToUserWordList',
+    async (id) => {
+        const token = localStorage.getItem('userToken')
+        let body = {wordId: id}
+        const response = await axios.post('http://localhost:4444/user/addWordToUserWordList', body, {headers: {Authorization: 'Bearer ' + token}})
+        return response.data
     }
 )
 
@@ -88,12 +97,23 @@ export const userSlice = createSlice({
         }).addCase(fetchAuthMe.rejected, (state) => {
             state.userInfo = null
             state.isAuth = false
-            state.status = 'loading'
+            state.status = 'error'
         }).addCase(fetchRegister.fulfilled, (state, action) => {
             state.userInfo = action.payload
             state.isAuth = true
             state.status = 'ok'
             localStorage.setItem('userToken', action.payload.token)
+        }).addCase(fetchRegister.pending, (state) => {
+            state.userInfo = null
+            state.isAuth = true
+            state.status = 'loading'
+        }).addCase(fetchRegister.rejected, (state) => {
+            state.userInfo = null
+            state.isAuth = true
+            state.status = 'error'
+        }).addCase(addWordToUserWordList.fulfilled, (state, action) => {
+            debugger
+            state.userInfo.userWordsList = action.payload.userWordsList;
         })
     }
 })

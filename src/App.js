@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { fetchAuthMe } from './Redux/Slices/user-slice'; 
 import React from 'react';
+import MyWordsPage from './pages/MyWordsPage/MyWordsPage';
 
 function App() {
   const dispacth = useDispatch()
@@ -43,6 +44,7 @@ function App() {
 
             <Routes>
               <Route path='/words' element={<WordsPage />} />
+              <Route path='/mywords' element={<MyWordsPage/>}/>
             </Routes> 
             :
             <Routes>

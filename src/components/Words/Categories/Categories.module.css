@@ -1,10 +1,28 @@
 .categories{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #2e2e2e;
+    
+}
+
+
+
+
+
+.title h3{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.categoriesWrapper{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
     font-family: 'Nunito', sans-serif;
     flex-wrap: wrap;
     box-sizing: border-box;
+    padding: 20px 0;
 }
 
 

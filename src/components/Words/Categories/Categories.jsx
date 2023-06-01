@@ -11,15 +11,22 @@ const Categories = () => {
 
 
 
-    return(
+    return (
         <div className={styles.categories}>
-                    {
-                        categories && categories.map(el =>
-                            <div onClick={() => { dispatch(fetchWords(el.engName)) }} className={styles.category}>
-                                <p>{el.name}</p>
-                            </div>)
-                    }
-                </div>
+            <div className={styles.title}>
+                <h3>Категории</h3>
+            </div>
+            <div className={styles.categoriesWrapper}>
+                {
+                    categories && categories.map(el =>
+                        <div onClick={() => { dispatch(fetchWords(el.engName)) }} className={styles.category}>
+                            <p>{el.name}</p>
+                        </div>)
+                }
+            </div>
+
+
+        </div>
     )
 }
 

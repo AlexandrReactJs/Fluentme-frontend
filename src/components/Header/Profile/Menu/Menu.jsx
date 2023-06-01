@@ -4,7 +4,8 @@ import styles from './Menu.module.css'
 import { setIsAuth, setMe } from "../../../../Redux/Slices/user-slice";
 import { useDispatch } from "react-redux";
 import { Link } from 'react-router-dom'
-
+import exitIcon from '../../../../assets/icons/exitIcon.png'
+import listIcon from '../../../../assets/icons/listIcon.png'
 
 
 const Menu = ({ userInfo }) => {
@@ -24,8 +25,8 @@ const Menu = ({ userInfo }) => {
 
             <div className={styles.menuNavigation}>
                 <div className={styles.link}>
-                    <img src="" alt="" />
-                    <Link>My words</Link>
+                    <img src={listIcon} alt="" />
+                    <Link to='/mywords'>My words</Link>
                 </div>
 
 
@@ -36,7 +37,7 @@ const Menu = ({ userInfo }) => {
                         localStorage.removeItem('userToken')
                     }}
                     className={styles.link}>
-                    <img src="" alt="" />
+                    <img src={exitIcon} alt="" />
                     <Link>Sign Out</Link>
                 </div>
             </div>
