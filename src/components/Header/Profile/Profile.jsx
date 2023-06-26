@@ -4,7 +4,13 @@ import styles from './Profile.module.css'
 import Menu from "./Menu/Menu";
 import userIcon from '../../../assets/icons/userIcon.png'
 import { Link } from 'react-router-dom'
+
+
+
 const Profile = () => {
+
+
+
     const dispatch = useDispatch()
     const userInfo = useSelector(state => state.user.userInfo)
 
@@ -24,12 +30,8 @@ const Profile = () => {
                     <img src={userIcon} alt="Profile" />
                 </div>
             </div>
-            {
-                open && <Menu userInfo={userInfo} />
 
-
-            }
-
+            <Menu userInfo={userInfo} open = {open} />
 
         </>
     )

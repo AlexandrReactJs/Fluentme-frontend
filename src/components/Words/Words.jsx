@@ -3,7 +3,7 @@ import styles from './Words.module.css'
 import { fetchCategory } from "../../Redux/Slices/words-slice";
 import { useDispatch, useSelector } from 'react-redux'
 import Categories from "./Categories/Categories";
-import { addWordToUserWordList } from "../../Redux/Slices/user-slice";
+import { addWordToUserWordList } from '../../Redux/Slices/user-mywords-slice'
 
 
 const Words = () => {

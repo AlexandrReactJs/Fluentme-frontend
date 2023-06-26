@@ -36,15 +36,7 @@ export const fetchAuthMe = createAsyncThunk(
 )
 
 
-export const addWordToUserWordList = createAsyncThunk(
-    'users/addWordToUserWordList',
-    async (id) => {
-        const token = localStorage.getItem('userToken')
-        let body = {wordId: id}
-        const response = await axios.post('http://localhost:4444/user/addWordToUserWordList', body, {headers: {Authorization: 'Bearer ' + token}})
-        return response.data
-    }
-)
+
 
 
 const initialState = {
@@ -111,9 +103,6 @@ export const userSlice = createSlice({
             state.userInfo = null
             state.isAuth = true
             state.status = 'error'
-        }).addCase(addWordToUserWordList.fulfilled, (state, action) => {
-            debugger
-            state.userInfo.userWordsList = action.payload.userWordsList;
         })
     }
 })

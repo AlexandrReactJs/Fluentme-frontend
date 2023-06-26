@@ -1,3 +1,29 @@
+.enter{
+    opacity: 0;
+ 
+
+}
+.enterActive{
+    opacity: 0;
+}
+
+.enterDone{
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+
+.exit{
+    opacity: 1;
+
+}
+
+.exitActive{
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+
 .Menu{
     font-family: 'Nunito', sans-serif;
     display: flex;
@@ -9,8 +35,9 @@
     padding: 10px 20px;
     border-radius: 10px;
     text-align: start;
-}
+    z-index: 1;
 
+}
 
 .userInfo{
     display: flex;
